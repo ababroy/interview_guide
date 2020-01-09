@@ -18,6 +18,8 @@ package com.java.collection;
  *         TreeMap
  * 
  *         Sort by value using comparator
+ *         
+ *         Sorted Map without TreeMap 
  * 
  *         Identity Hash Map ... (r1==r2 rather than r1.equals(r2))
  * 
@@ -28,7 +30,7 @@ package com.java.collection;
  *         Concurrent Modification Exception
  * 
  *         Fail Fast / Fail safe
- * 
+ *  
  * 
  * 
  *
