@@ -1,5 +1,32 @@
 package com.java.object.string;
 
+/**
+ * String
+ * 
+ */
+/*
+ * final vs Immutability
+ */
+/**
+ * you can't reassign to the reference variable but it des not mean that you can't perfom any changes into that object
+ * 
+ * final SB sb = new SB("Hello"); sb.append("World");
+ * 
+ * sb = new SB("MyWorld"); //compile error bcz it's final
+ * 
+ * 
+ * Conclusion::
+ * 
+ * - final variable (Y)
+ * 
+ * - final object (N)
+ * 
+ * - Immutable variable (N)
+ * 
+ * - Immutable object (Y)
+ * 
+ */
+
 /*
  * Why SCP concept is in String?
  */
