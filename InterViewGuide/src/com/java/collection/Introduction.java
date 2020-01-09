@@ -23,7 +23,7 @@ package com.java.collection;
  * 
  *         ConcurrentHashMap
  * 
- *         ConcurrentSkipListSet
+ *         ConcurrentSkipListMap is equivalent of TreeMap (concurrent version)
  * 
  *         Concurrent Modification Exception
  * 

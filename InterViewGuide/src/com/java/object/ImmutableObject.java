@@ -38,4 +38,28 @@ public final class ImmutableObject
             return new ImmutableObject( id );
         }
     }
+
+    @Override
+    public boolean equals ( Object obj )
+    {
+        ImmutableObject im = ( ImmutableObject ) obj;
+        if ( im == null )
+        {
+            return false;
+        }
+        else if ( this.id == im.id )
+        {
+            return true;
+        }
+        else
+            return false;
+    }
+    
+    @Override
+    public int hashCode()
+    {
+        int prime = 31;
+        int code = prime * id +1;
+        return code;
+    }
 }
