@@ -1,4 +1,4 @@
-package com.java.collection;
+package com.java.collection.test;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -13,7 +13,7 @@ import java.util.Map;
  * @author AROY
  *
  */
-public class SortedMapWithoutTreeMap
+public class SortedMapWithoutTreeMapTest
 {
     public static void main ( String[] args )
     {
