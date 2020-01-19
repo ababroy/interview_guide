@@ -17,9 +17,11 @@ package com.java.collection;
  * 
  *         TreeMap
  * 
+ *         How TreeSet implemented internally [Dummy value to associate with an Object in the backing Map => {Object PRESENT} ]
+ * 
  *         Sort by value using comparator
- *         
- *         Sorted Map without TreeMap 
+ * 
+ *         Sorted Map without TreeMap
  * 
  *         Identity Hash Map ... (r1==r2 rather than r1.equals(r2))
  * 
@@ -30,8 +32,8 @@ package com.java.collection;
  *         Concurrent Modification Exception
  * 
  *         Fail Fast / Fail safe
- *  
  * 
+ *         No Duplicate in ArrayList
  * 
  *
  */
