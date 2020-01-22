@@ -1,7 +1,16 @@
 package com.dsa.linkedlist;
 
+/**
+ * Utility class
+ * 
+ * @author AROY
+ *
+ */
 public final class Utility
 {
+    private Utility ()
+    {
+    }
 
     enum Position
     {
@@ -31,7 +40,7 @@ public final class Utility
             Node temp = head;
             do
             {
-                System.out.print( "["+temp.data + "] -> " );
+                System.out.print( "[" + temp.data + "] -> " );
                 temp = temp.next;
             }
             while ( temp != null );
@@ -42,5 +51,13 @@ public final class Utility
         {
             System.out.println( "Oops! it's empty" );
         }
+    }
+
+    public static void updateLinkedList ( String operationName, Node head )
+    {
+        System.out.println( operationName );
+        Utility.printLinkedList( head );
+        System.out.println( "Linked List Size: " + Utility.linkedListSize( head ) );
+        System.out.println();
     }
 }
