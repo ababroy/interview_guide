@@ -31,12 +31,12 @@ public final class Utility
             Node temp = head;
             do
             {
-                System.out.print( temp.data + " -> " );
+                System.out.print( "["+temp.data + "] -> " );
                 temp = temp.next;
             }
             while ( temp != null );
 
-            System.out.println( "NULL" );
+            System.out.println( "[NULL]" );
         }
         else
         {

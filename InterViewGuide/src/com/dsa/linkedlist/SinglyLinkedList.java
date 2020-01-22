@@ -16,11 +16,16 @@ public class SinglyLinkedList
         Utility.printLinkedList( head );
         int size = Utility.linkedListSize( head );
         System.out.println( "Linked List Size: " + size );
-
+        System.out.println(  );
+        
+        
         addNode( 5, Position.START );
         Utility.printLinkedList( head );
         size = Utility.linkedListSize( head );
         System.out.println( "Linked List Size: " + size );
+        System.out.println(  );
+        
+        
 
         addNode( 35, Position.MIDDLE );
         Utility.printLinkedList( head );
