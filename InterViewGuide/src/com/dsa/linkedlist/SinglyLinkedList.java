@@ -27,10 +27,12 @@ public class SinglyLinkedList
         // System.out.println( "Reverse Linked List" );
         // Utility.printReverseLinkedList( head );
 
-        PrintMiddleOfTheLinkedList.printMiddleNodeOfLinkedList( head );
-
-        LinkedListDeletion.deleteLinkedList( head );
-
+        // PrintMiddleOfTheLinkedList.printMiddleNodeOfLinkedList( head );
+        //
+        // LinkedListDeletion.deleteLinkedList( head );
+        
+        int nThNode = NthNodeFromEndOfLinkedList.printNthNodeFromEndOfLinkedList( head, 4 );
+        System.out.println( "Nth Node From End Of Linked List: "+nThNode );
     }
 
     private static void deleteNode ( int data )
