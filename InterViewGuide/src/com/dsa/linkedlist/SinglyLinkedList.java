@@ -2,6 +2,7 @@ package com.dsa.linkedlist;
 
 import com.dsa.linkedlist.Utility.Position;
 
+
 public class SinglyLinkedList
 {
     static Node head = null;
@@ -23,6 +24,10 @@ public class SinglyLinkedList
 
         deleteNode( 5 );
         Utility.updateLinkedList( "Start-Delete", head );
+        
+        System.out.println( "Reverse Linked List--" );
+        Utility.printReverseLinkedList( head );
+        
 
     }
 
