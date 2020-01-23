@@ -88,6 +88,7 @@ public final class Utility
         Node prev = null;
         Node current = head;
         Node startNode = recursiveWay( prev, current );
+        head  = startNode;
         printLinkedList( startNode );
     }
 

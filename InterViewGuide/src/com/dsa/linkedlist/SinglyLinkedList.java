@@ -2,7 +2,6 @@ package com.dsa.linkedlist;
 
 import com.dsa.linkedlist.Utility.Position;
 
-
 public class SinglyLinkedList
 {
     static Node head = null;
@@ -22,12 +21,15 @@ public class SinglyLinkedList
         addNode( 25, Position.MIDDLE );
         Utility.updateLinkedList( "Middle-insert", head );
 
-        deleteNode( 5 );
-        Utility.updateLinkedList( "Start-Delete", head );
-        
-        System.out.println( "Reverse Linked List--" );
-        Utility.printReverseLinkedList( head );
-        
+        // deleteNode( 5 );
+        // Utility.updateLinkedList( "Start-Delete", head );
+
+        // System.out.println( "Reverse Linked List" );
+        // Utility.printReverseLinkedList( head );
+
+        PrintMiddleOfTheLinkedList.printMiddleNodeOfLinkedList( head );
+
+        LinkedListDeletion.deleteLinkedList( head );
 
     }
 
@@ -69,7 +71,7 @@ public class SinglyLinkedList
      * @param data
      * @param position
      */
-    private static void addNode ( int data, Position position )
+    static void addNode ( int data, Position position )
     {
         switch ( position )
         {
