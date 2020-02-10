@@ -15,11 +15,11 @@ public class SinglyLinkedList
         addNode( 50, Position.END );
         Utility.updateLinkedList( "End-insert", head );
 
-        addNode( 5, Position.START );
-        Utility.updateLinkedList( "Start-insert", head );
-
-        addNode( 25, Position.MIDDLE );
-        Utility.updateLinkedList( "Middle-insert", head );
+        // addNode( 5, Position.START );
+        // Utility.updateLinkedList( "Start-insert", head );
+        //
+        // addNode( 25, Position.MIDDLE );
+        // Utility.updateLinkedList( "Middle-insert", head );
 
         // deleteNode( 5 );
         // Utility.updateLinkedList( "Start-Delete", head );
@@ -31,8 +31,11 @@ public class SinglyLinkedList
         //
         // LinkedListDeletion.deleteLinkedList( head );
         
-        int nThNode = NthNodeFromEndOfLinkedList.printNthNodeFromEndOfLinkedList( head, 4 );
-        System.out.println( "Nth Node From End Of Linked List: "+nThNode );
+        // int nThNode = NthNodeFromEndOfLinkedList.printNthNodeFromEndOfLinkedList( head, 4 );
+        // System.out.println( "Nth Node From End Of Linked List: "+nThNode );
+        
+        DetectLoopInLinkedList.detectLoopInLinkedList( head );
+        
     }
 
     private static void deleteNode ( int data )
