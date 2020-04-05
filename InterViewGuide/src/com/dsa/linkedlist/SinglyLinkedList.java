@@ -1,5 +1,6 @@
 package com.dsa.linkedlist;
 
+import com.dsa.linkedlist.DetectLoopInLinkedList.DetectLoopInLinkedList1;
 import com.dsa.linkedlist.Utility.Position;
 
 public class SinglyLinkedList
@@ -78,6 +79,12 @@ public class SinglyLinkedList
         Node start = head;
         DetectLoopInLinkedList.removeTheLoop( head );
         Utility.printLinkedList( start );
+        
+        // int nThNode = NthNodeFromEndOfLinkedList.printNthNodeFromEndOfLinkedList( head, 4 );
+        // System.out.println( "Nth Node From End Of Linked List: "+nThNode );
+        
+        DetectLoopInLinkedList1.detectLoopInLinkedList1( head );
+        
     }
 
     private static void deleteNode ( int data )

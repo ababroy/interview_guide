@@ -82,4 +82,31 @@ public class DetectLoopInLinkedList
 //        }
 //        return 0;
 //    }
+static class DetectLoopInLinkedList1
+{
+    private DetectLoopInLinkedList1 ()
+    {
+    }
+
+    public static void detectLoopInLinkedList1 ( Node head )
+    {
+        if ( head != null )
+        {
+            Node slow = head;
+            Node fast = slow.next;
+
+            while ( fast != null )
+            {
+                slow = slow.next;
+                fast = fast.next;
+            }
+            
+            System.out.println( "Middle element " + slow.data );
+        }
+        else
+        {
+            System.out.println( "It's an empty linked list" );
+        }
+    }
+}
 }
