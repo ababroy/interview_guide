@@ -8,7 +8,7 @@ package com.java.object.string;
  * final vs Immutability
  */
 /**
- * you can't reassign to the reference variable but it des not mean that you can't perfom any changes into that object
+ * you can't reassign to the reference variable but it does not mean that you can't perform any changes into that object
  * 
  * final SB sb = new SB("Hello"); sb.append("World");
  * 
@@ -37,13 +37,13 @@ package com.java.object.string;
  * Why String is immutable?
  */
 /**
- * Because of SCP. all reference with same content refer to same object , if one ref is going to change its value all will be impacted.
+ * Because of SCP. Multiple references with same content refer to the same object , if one ref is going to change its value all will be impacted.
  * 
  * To prevent that, immutability concept introduced in String class
  */
 
 /*
- * equals()
+ * .equals()
  */
 /**
  * r1 == r2 is true then r1.equals(r2) is always true
@@ -56,11 +56,13 @@ package com.java.object.string;
  * 
  * 
  * 
- * In String buffer .equals() method is not overridden for content comparison SB sb1 = new SB("abhi");
+ * In String buffer .equals() method is not overridden for content comparison
+ * 
+ * SB sb1 = new SB("abhi");
  * 
  * SB sb2 = new SB("abhi");
  * 
- * sb1.equals(sb2); // return false since StringBuffer .equals() method is not overridden for content comparison
+ * sb1.equals(sb2); // return false // Bcz StringBuffer .equals() method is not overridden for content comparison
  * 
  * 
  */

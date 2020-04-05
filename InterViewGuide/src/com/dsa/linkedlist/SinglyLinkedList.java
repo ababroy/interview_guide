@@ -4,22 +4,57 @@ import com.dsa.linkedlist.Utility.Position;
 
 public class SinglyLinkedList
 {
-    static Node head = null;
+    static Node head = null, one, two, three, four, five, six, seven, eight, nine;
 
     public static void main ( String[] args )
     {
-        head = new Node( 10 );
-        addNode( 20, Position.END );
-        addNode( 30, Position.END );
-        addNode( 40, Position.END );
-        addNode( 50, Position.END );
-        Utility.updateLinkedList( "End-insert", head );
+        head = new Node( 1 );
+        one = new Node( 2 );
+        two = new Node( 3 );
+        three = new Node( 4 );
+        four = new Node( 5 );
+        five = new Node( 6 );
+        six = new Node( 7 );
+        seven = new Node( 8 );
+        eight = new Node( 9 );
+        nine = new Node( 10 );
 
-        addNode( 5, Position.START );
-        Utility.updateLinkedList( "Start-insert", head );
+        head.next = one;
 
-        addNode( 25, Position.MIDDLE );
-        Utility.updateLinkedList( "Middle-insert", head );
+        one.next = two;
+
+        two.next = three;
+
+        three.next = four;
+
+        four.next = five;
+
+        five.next = six;
+
+        six.next = seven;
+
+        seven.next = eight;
+
+        eight.next = nine;
+
+        nine.next = two; // loop
+
+        // addNode( 2, Position.END );
+        // addNode( 3, Position.END );
+        // addNode( 5, Position.END );
+        // addNode( 3, Position.END );
+        // addNode( 2, Position.END );
+        // addNode( 1, Position.END );
+        // addNode( 8, Position.END );
+        // addNode( 8, Position.END );
+        // addNode( 2, Position.END );
+        // Utility.updateLinkedList( "End-insert", head );
+
+        // addNode( 5, Position.START );
+        // Utility.updateLinkedList( "Start-insert", head );
+        //
+        // addNode( 25, Position.MIDDLE );
+        // Utility.updateLinkedList( "Middle-insert", head );
 
         // deleteNode( 5 );
         // Utility.updateLinkedList( "Start-Delete", head );
@@ -30,9 +65,19 @@ public class SinglyLinkedList
         // PrintMiddleOfTheLinkedList.printMiddleNodeOfLinkedList( head );
         //
         // LinkedListDeletion.deleteLinkedList( head );
-        
-        int nThNode = NthNodeFromEndOfLinkedList.printNthNodeFromEndOfLinkedList( head, 4 );
-        System.out.println( "Nth Node From End Of Linked List: "+nThNode );
+
+        // int nThNode = NthNodeFromEndOfLinkedList.printNthNodeFromEndOfLinkedList( head, 4 );
+        // System.out.println( "Nth Node From End Of Linked List: "+nThNode );
+
+        // Node rotateLinkedList = RotateLinkedList.rotate( head, 8 );
+        // Utility.printLinkedList( rotateLinkedList );
+
+        // boolean isPalindrome = PalindromeCheckInLinkedList.isPalindromeLL( head );
+        // System.out.println( "IsPalindrome: " + isPalindrome );
+        // Utility.printLinkedList( head );
+        Node start = head;
+        DetectLoopInLinkedList.removeTheLoop( head );
+        Utility.printLinkedList( start );
     }
 
     private static void deleteNode ( int data )
