@@ -18,6 +18,7 @@ public final class ReverseLinkedListInGroupsOfGivenSize
      * Output: 4 3 2 1 8 7 6 5
      * 
      * @param head
+     * @param rotatePoint
      */
     public static void reverseLinkedListInGroupsOfGivenSize ( Node head, int rotatePoint )
     {
@@ -38,7 +39,7 @@ public final class ReverseLinkedListInGroupsOfGivenSize
                 {
                     preGroupStart = current;
                     preGroupEnd = start;
-                    
+
                     System.out.println( "PreGroup Start : " + preGroupStart.data );
                     count = 1;
                 }
@@ -59,6 +60,7 @@ public final class ReverseLinkedListInGroupsOfGivenSize
     }
 
     /**
+     * reverseLinkedListInGivenSize
      * 
      * @param head
      * @param rotatePoint

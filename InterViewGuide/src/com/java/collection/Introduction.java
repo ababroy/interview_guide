@@ -7,13 +7,14 @@ package com.java.collection;
  * 
  *         HashMap internal Implementation
  * 
- *         Hash Collision
+ *         Hash Collision - A collision occurs when a hash function returns same bucket location for two different keys.
  * 
  *         Hashing Mechanism
  * 
  *         Linked Hash Map[ doubly linked list]
  * 
- *         WeakedHashMap
+ *         WeakHashMap - WeakHashMap is almost same as HashMap except in case of WeakHashMap, if object is specified as key doesn’t contain any references
+ *         - it is eligible for garbage collection even though it is associated with WeakHashMap. i.e Garbage Collector dominates over WeakHashMap.
  * 
  *         TreeMap
  * 

@@ -5,9 +5,12 @@ import java.util.Stack;
 public final class PalindromeCheckInLinkedList
 {
 
-    /**
-     * Splitting LL into two and compare
-     */
+   /**
+    * Splitting LL into two and compare
+    * 
+    * @param head
+    * @return
+    */
     public static boolean isPalindromeLL ( Node head )
     {
         boolean isPalindrome = false;
@@ -85,12 +88,12 @@ public final class PalindromeCheckInLinkedList
         return null;
     }
 
-    /**
-     * Using Stack
-     * 
-     * @param head
-     * @return
-     */
+   /**
+    * Using Stack
+    * 
+    * @param head
+    * @return
+    */
     public static boolean isPalindrome ( Node head )
     {
         // Your code here
