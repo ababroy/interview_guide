@@ -7,7 +7,7 @@ public class PrintHelloWorldByTwoThreadsUsingWaitNotify
     {
         PrintJob job = new PrintJob( 1, 10 );
 
-        Thread t1 = new Thread( new PrintHello( job ), "hello-thread" );
+        Thread t1 = new Thread(new PrintHello( job ), "hello-thread");
         t1.start();
 
         Thread t2 = new Thread( new PrintWorld( job ), "world-thread" );
