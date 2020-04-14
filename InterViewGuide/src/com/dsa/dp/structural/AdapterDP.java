@@ -1,4 +1,4 @@
-package com.dsa.design_pattern;
+package com.dsa.dp.structural;
 
 /**
  * Link: Pilot Pen - https://www.youtube.com/watch?v=Y7DYhe6efQY&list=PLsyeobzWxl7r2ZX1fl-7CKnayxHJA_1ol&index=7 WebDriver - https://www.youtube.com/watch?v=FsS-jWCPtQI

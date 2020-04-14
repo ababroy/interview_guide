@@ -1,4 +1,4 @@
-package com.dsa.design_pattern;
+package com.dsa.dp.structural;
 
 public class FacadeDP
 {
